@@ -1,5 +1,5 @@
 
-var sumaTrabajos = 0;
+var sumaTrabajos = 0; prompt ("ingrese un numero")
 
 function CalcularPromedio(examenFinal, examenParcial, trabajos)
 {
@@ -15,4 +15,5 @@ function CalcularPromedio(examenFinal, examenParcial, trabajos)
 }
 
 alert(CalcularPromedio(10, 6, [10, 7, 8]));
+console.log(CalcularPromedio)
 //
