@@ -1,19 +1,22 @@
 
-var sumaTrabajos = 0; prompt ("ingrese un numero")
-
-function CalcularPromedio(examenFinal, examenParcial, trabajos)
-{
-  calificacionExamen = examenFinal * 0.45;
-  calificacionParcial = examenParcial * 0.35;
-  trabajos.forEach(function(calificacion) {
-  	sumaTrabajos += calificacion;
-  });
-  calificacionTrabajos = (sumaTrabajos / trabajos.length) * 0.2;
-  promedio = calificacionExamen + calificacionParcial + calificacionTrabajos;
-  
-  return ((promedio < 7)?'Reprobado':'Aprobado') + ' - Promedio: ' + promedio;
-}
-
-alert(CalcularPromedio(10, 6, [10, 7, 8]));
-console.log(CalcularPromedio)
 //
+
+let nota1, nota2, nota3;
+nota1 = prompt('Ingrese 1ra. nota:');
+nota2 = prompt('Ingrese 2da. nota:');
+nota3 = prompt('Ingrese 3ra. nota:');
+//Convertimos los 3 string en enteros
+nota1 = parseInt(nota1);
+nota2 = parseInt(nota2);
+nota3 = parseInt(nota3);
+let pro;
+pro = (nota1 + nota2 + nota3) / 3;
+if (pro >= 7) {
+    document.write('promocionado');
+} else {
+    if (pro >= 4) {
+        document.write('regular');
+    } else {
+        document.write('reprobado');
+    }
+}
