@@ -1,5 +1,4 @@
 
-//
 
 let nota1, nota2, nota3;
 nota1 = prompt('Ingrese 1ra. nota:');
